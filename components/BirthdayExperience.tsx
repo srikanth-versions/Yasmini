@@ -19,14 +19,12 @@ export const BirthdayExperience: React.FC<BirthdayExperienceProps> = ({
 
   // Media loaded directly from the public photos folder
   const [photos] = useState<string[]>([
-    "/photos/img1.jpeg",
+    "/photos/img1.png",
     "/photos/img2.jpeg",
     "/photos/img3.jpeg",
     "/photos/img4.jpeg",
     "/photos/img5.jpeg",
-    "/photos/img6.jpeg",
-    "/photos/img7.jpeg",
-    "/photos/vid1.mp4"
+   
   ]);
 
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
@@ -68,17 +66,18 @@ export const BirthdayExperience: React.FC<BirthdayExperienceProps> = ({
     },
     {
       title: "Your Kind Heart",
-      description: "I don't know how you are with your friends and family, but with me, you've always cringe and You Never Judge Me ,that's why I Am Still Talking With You.Because I Too Like to Do that",
+      description:
+        "I don't know how you are with your friends and family, but with me, you've always been silly and playful. You've never judged me, and that's why I still love talking to you. Because I love being that way with you too. ❤️",
       icon: "💖",
     },
     {
       title: "Our Shared Dreams",
-      description: "Building memories, laughing until our stomachs hurt, and growing together side by side All the Best to Future Doctor.",
+      description: "Building memories, laughing until our stomachs hurt, and growing together side by side All the Best to Future.",
       icon: "🌌",
     },
     {
       title: "Your Unique Grace",
-      description: "you have only 5 sense when your talking with me , me too , ",
+      description: "You have such a kind heart. Even when I make mistakes, you never make me feel bad about them. You always understand me, and that's one of the many things I love about you. ❤️ ",
       icon: "🌹",
     },
   ];
@@ -87,9 +86,8 @@ export const BirthdayExperience: React.FC<BirthdayExperienceProps> = ({
     {
       date: "CHAPTER I",
       title: "The First Spark",
-      text: "I Can't Belive , You and Me 11 yrs of friendship",
-    },
-    {
+      text: "I still remember the first time I met you and the first time we talked. It's a moment I'll always keep close to my heart. ❤️"
+        },    {
       date: "CHAPTER II",
       title: "Unforgettable Adventures",
       text: "Late night conversations, endless laughter, and discovering new corners of the world together and with only using 5 sense.",
@@ -338,7 +336,7 @@ export const BirthdayExperience: React.FC<BirthdayExperienceProps> = ({
 
       {/* Secret Personal Letter Modal */}
       {letterOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div className="fixed inset-0 z-50 flex items-end justify-center p-4 bg-black/80 backdrop-blur-md">
           <div className="glass-romantic-card p-6 sm:p-8 rounded-3xl w-full max-w-xl relative border border-[#D9B88F]/50 shadow-2xl max-h-[85vh] overflow-y-auto">
             <button
               onClick={() => setLetterOpen(false)}
@@ -361,17 +359,33 @@ export const BirthdayExperience: React.FC<BirthdayExperienceProps> = ({
               </h3>
 
               <div className="text-left text-sm text-[#FFF1F4]/90 leading-relaxed font-serif-editorial space-y-3 pt-3 border-t border-[#C77C8A]/20">
-                <p>
-                  Every year we feel more happy and more excited in this one day! Today is yours — make it well and be happy with your friends and families.❤️ 🎂
-                </p>
-                <p>
-                 Pesa Edhuvum Ilaamaa Kooda 2 3 Mani Neram Namba Pesuvom adhuvum Konjam moola Valrchi Illadha maari, Rendu Perum Enna Next Pesuvom Nu Purinjikira  Alavukku Oru Nalla Bond Namakkulla, Adhanaala Single Aah Vey Keda.. Enakku Company Kudu..😄
+                
 
+                <p>Happy Birthday என் Yasmin...😄</p>
+
+                <p>
+                  உன்னைப் பார்த்த முதல் நாளிலிருந்து இன்று வரை என் மனசில் நீதான்.
                 </p>
                 <p>
-                Seekram Doctor Aagu Namma Oorukullaiye Clinic Vachiru..Appo Dhaa Osi la Oosi Poda Mudiyum.. Nanum Pudhusa Emotional ah..Eludha Try Pannan Mudila..Ippadi Dha Pesa Mudiyudhu..By The Way Indha Year Unakku Nalla Badiya Amaiya Ennudaiya Vazhthukkal. And By The Way, Happy Birthday SWATHI! Konjam Late Aachi… Paravaala, Vachikko! ❤️
+                  உன்னுடைய ஒரு சிறிய சம்மதத்திற்காக இரண்டு ஆண்டுகள் காத்திருந்தேன்.
+                  ஆனால், நீ என் வாழ்க்கையில் வந்த இந்த தருணங்கள், நான்
+                  வாழ்ந்ததிலேயே மிகவும் அழகான தருணங்கள். ❤️
                 </p>
-                <p>Eppudi Unexpected ah..😎🔥</p>
+                <p>
+                  இனி வரும் ஒவ்வொரு நாளும் உனக்காகவும், நமக்காகவும் என்னை இன்னும்
+                  மாற்றிக்கொள்வேன். உன் சிரிப்புக்குக் காரணமாகவும், உன் கண்ணீரைத்
+                  துடைக்கும் கரங்களாகவும் எப்போதும் இருக்க ஆசைப்படுகிறேன்.❤️
+                </p>
+                <p>
+                  உன்னை நேசிப்பது மட்டுமல்ல, ஒவ்வொரு நாளும் புதிதாகக் காதலிக்கவும்
+                  ஆசைப்படுகிறேன். எந்தச் சூழ்நிலையிலும் உன் கையை விடாமல், உன்னை
+                  அன்போடும் அக்கறையோடும் வாழ்நாள் முழுவதும் பார்த்துக்கொள்வேன்.
+                </p>
+                <p>I Love You So Much, My Babydoll! ❤️😘</p>
+                <p>
+                  இனிய பிறந்தநாள் வாழ்த்துகள் என் உயிரே! என் வாழ்க்கையில் நீ வந்தது
+                  எனக்குக் கிடைத்த மிக அழகான பரிசு. ❤️🫂
+                </p>
                 <p className="text-right text-[#D9B88F] pt-2 font-semibold text-base">
                   With all my love, always ❤️
                 </p>

@@ -8,7 +8,7 @@ import { NameModal } from "@/components/NameModal";
 import { romanticAudio } from "@/components/AudioEngine";
 
 export default function Home() {
-  const [herName, setHerName] = useState("SWATHI");
+  const [herName, setHerName] = useState("YASMINI");
   const [showExperience, setShowExperience] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
@@ -17,10 +17,12 @@ export default function Home() {
   // Load custom name from localStorage & Auto-play music on enter/first interaction
   useEffect(() => {
     const savedName = localStorage.getItem("celeste_her_name");
-    if (savedName) {
+    if (savedName?.toUpperCase() === "SWATHI") {
+      localStorage.setItem("celeste_her_name", "YASMINI");
+    } else if (savedName) {
       setHerName(savedName);
     } else {
-      localStorage.setItem("celeste_her_name", "SWATHI");
+      localStorage.setItem("celeste_her_name", "YASMINI");
     }
 
     // Auto-start music attempt on enter
